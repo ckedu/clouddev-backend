@@ -89,7 +89,7 @@
         {
             "type": "Microsoft.Web/sites/config",
             "apiVersion": "2022-03-01",
-            "name": "[concat(parameters('sites_aps_clouddev_ckesh_name'), '/web')]",
+            "name": "[concat(parameters('sites_aps_clouddev_ck_name'), '/web')]",
             "location": "Central US",
             "dependsOn": [
                 "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ck_name'))]"
