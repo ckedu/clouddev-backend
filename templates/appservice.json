@@ -23,12 +23,12 @@
                 "enabled": true,
                 "hostNameSslStates": [
                     {
-                        "name": "[concat(parameters('sites_aps_clouddev_ckesh_name'), '.azurewebsites.net')]",
+                        "name": "[concat(parameters('sites_aps_clouddev_ck_name'), '.azurewebsites.net')]",
                         "sslState": "Disabled",
                         "hostType": "Standard"
                     },
                     {
-                        "name": "[concat(parameters('sites_aps_clouddev_ckesh_name'), '.scm.azurewebsites.net')]",
+                        "name": "[concat(parameters('sites_aps_clouddev_ck_name'), '.scm.azurewebsites.net')]",
                         "sslState": "Disabled",
                         "hostType": "Repository"
                     }
