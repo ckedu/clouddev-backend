@@ -68,7 +68,7 @@
             "name": "[concat(parameters('sites_aps_clouddev_ck_name'), '/ftp')]",
             "location": "Central US",
             "dependsOn": [
-                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ck'))]"
+                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ck_name'))]"
             ],
             "properties": {
                 "allow": true
@@ -92,7 +92,7 @@
             "name": "[concat(parameters('sites_aps_clouddev_ckesh_name'), '/web')]",
             "location": "Central US",
             "dependsOn": [
-                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ckesh_name'))]"
+                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ck_name'))]"
             ],
             "properties": {
                 "numberOfWorkers": 1,
@@ -114,7 +114,7 @@
                 "acrUseManagedIdentityCreds": false,
                 "logsDirectorySizeLimit": 35,
                 "detailedErrorLoggingEnabled": false,
-                "publishingUsername": "$aps-clouddev-ckesh",
+                "publishingUsername": "$aps-clouddev-ck",
                 "scmType": "GitHubAction",
                 "use32BitWorkerProcess": true,
                 "webSocketsEnabled": false,
@@ -170,7 +170,7 @@
             "name": "[concat(parameters('sites_aps_clouddev_ckesh_name'), '/6957c110a2cd4b3c80404edc7e47e83b')]",
             "location": "Central US",
             "dependsOn": [
-                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ckesh_name'))]"
+                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ck_name'))]"
             ],
             "properties": {
                 "status": 4,
@@ -189,7 +189,7 @@
             "name": "[concat(parameters('sites_aps_clouddev_ckesh_name'), '/775b0aacd0d04c62b050c2b1c49c2bda')]",
             "location": "Central US",
             "dependsOn": [
-                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ckesh_name'))]"
+                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ck_name'))]"
             ],
             "properties": {
                 "status": 4,
@@ -208,7 +208,7 @@
             "name": "[concat(parameters('sites_aps_clouddev_ckesh_name'), '/d099484a14e94f4f8e830e02763cb8b1')]",
             "location": "Central US",
             "dependsOn": [
-                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ckesh_name'))]"
+                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ck_name'))]"
             ],
             "properties": {
                 "status": 4,
@@ -227,7 +227,7 @@
             "name": "[concat(parameters('sites_aps_clouddev_ckesh_name'), '/', parameters('sites_aps_clouddev_ckesh_name'), '.azurewebsites.net')]",
             "location": "Central US",
             "dependsOn": [
-                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ckesh_name'))]"
+                "[resourceId('Microsoft.Web/sites', parameters('sites_aps_clouddev_ck_name'))]"
             ],
             "properties": {
                 "siteName": "aps-clouddev-ckesh",
